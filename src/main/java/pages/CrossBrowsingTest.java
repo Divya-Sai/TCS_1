@@ -19,6 +19,10 @@ public class CrossBrowsingTest {
 			driver =new FirefoxDriver();
 			
 		}
+		else if (BrowserName.equalsIgnoreCase("Internet")) {
+			System.setProperty("webdriver.gecko.driver", ".\\geckodriver.exe");
+			driver =new FirefoxDriver();
+		}
 	}
 
 }
